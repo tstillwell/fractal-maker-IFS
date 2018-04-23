@@ -1,3 +1,12 @@
 #!/usr/bin/env node
 const readline = require('readline');
-console.log("Please enter an IFS equation");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Please enter an IFS equation ', (equation) => {
+  console.log(`${equation}`);
+  rl.close();
+});
