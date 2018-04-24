@@ -13,4 +13,12 @@ rl.question('Please enter an IFS equation ', (equation) => {
 
 function validateEquation (equation) {
   // confirm equation is in expected format
-};
+  // IFS parameters should be 6 or 7 decimal coefficients
+  let coefficients = equation.split(" ");
+  if (coefficients.length != (6 || 7)){
+    console.log("invalid equation");
+  }
+  else {
+    return true;
+  }
+}
