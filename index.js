@@ -10,3 +10,7 @@ rl.question('Please enter an IFS equation ', (equation) => {
   console.log(`${equation}`);
   rl.close();
 });
+
+function validateEquation (equation) {
+  // confirm equation is in expected format
+};
