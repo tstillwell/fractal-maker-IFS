@@ -22,3 +22,9 @@ function validateEquation (equation) {
     return true;
   }
 }
+
+
+function isNumeric(n) {
+  // verify an input is in fact numeric
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
