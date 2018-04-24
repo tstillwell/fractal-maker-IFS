@@ -23,8 +23,8 @@ function validateEquation (equation) {
   }
 }
 
-
 function isNumeric(n) {
+  // https://stackoverflow.com/a/1830844
   // verify an input is in fact numeric
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
