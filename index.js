@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 });
 
 rl.question('Please enter an IFS equation ', (equation) => {
-  console.log(`${equation}`);
+  validateEquation(`${equation}`);
   rl.close();
 });
 
@@ -19,7 +19,9 @@ function validateEquation (equation) {
     console.log("invalid equation");
   }
   else {
-    return true;
+    if (coefficients.every(isNumeric)) {
+      console.log("looks good");
+    }
   }
 }
 
