@@ -15,13 +15,11 @@ function validateEquation (equation) {
   // confirm equation is in expected format
   // IFS parameters should be 6 or 7 decimal coefficients
   let coefficients = equation.split(" ");
-  if (coefficients.length != (6 || 7)){
-    console.log("invalid equation");
+  if (coefficients.length == (6 || 7) && (coefficients.every(isNumeric))){
+    console.log("looks good");
   }
   else {
-    if (coefficients.every(isNumeric)) {
-      console.log("looks good");
-    }
+    console.log("invalid equation");
   }
 }
 
