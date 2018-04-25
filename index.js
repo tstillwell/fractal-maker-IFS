@@ -7,11 +7,11 @@ const rl = readline.createInterface({
 });
 
 rl.question('Please enter an IFS equation ', (equation) => {
-  validateEquation(`${equation}`);
+  isValidEquation(`${equation}`);
   rl.close();
 });
 
-function validateEquation (equation) {
+function isValidEquation (equation) {
   // confirm equation is in expected format
   // IFS parameters should be 6 or 7 decimal coefficients
   let coefficients = equation.split(" ");
