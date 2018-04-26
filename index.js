@@ -9,7 +9,10 @@ const rl = readline.createInterface({
 rl.question('Please enter an IFS equation ', (equation) => {
   if (isValidEquation(`${equation}`)){
     // process equation params
-  }  
+  }
+  else {
+    console.log("Invalid equation");
+  }
   rl.close();
 });
 
