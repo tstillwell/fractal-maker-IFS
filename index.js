@@ -33,3 +33,7 @@ function isNumeric(n) {
   // verify an input is in fact numeric
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
+
+function makeFractal() {
+  // generate fractal from IFS equations
+}
