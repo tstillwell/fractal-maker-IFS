@@ -38,3 +38,7 @@ function makeFractal() {
   // generate fractal from IFS equations
   let points = [];
 }
+
+function generateNextPoint(point, IFSparams){
+  	// generate next point
+}
