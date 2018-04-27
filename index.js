@@ -36,4 +36,5 @@ function isNumeric(n) {
 
 function makeFractal() {
   // generate fractal from IFS equations
+  let points = [];
 }
