@@ -41,4 +41,5 @@ function makeFractal() {
 
 function generateNextPoint(point, IFSparams){
   	// generate next point
+	// using provided IFS equation parameters
 }
