@@ -6,15 +6,17 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Please enter an IFS equation ', (equation) => {
-  if (isValidEquation(`${equation}`)){
-    // process equation params
-  }
-  else {
-    console.log("Invalid equation");
-  }
-  rl.close();
-});
+function promptForIFS(){
+  rl.question('Please enter an IFS equation ', (equation) => {
+    if (isValidEquation(`${equation}`)){
+      // process equation params
+    }
+    else {
+      console.log("Invalid equation");
+    }
+    rl.close();
+  });
+}
 
 function isValidEquation (equation) {
   // confirm equation is in expected format
