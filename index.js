@@ -40,6 +40,7 @@ function makeFractal(equations) {
   // generate fractal from IFS equations
   let initialPoint = [1,1];
   let points = [];
+  let pointCount = 0;
 }
 
 function generateNextPoint(point, IFSparams){
