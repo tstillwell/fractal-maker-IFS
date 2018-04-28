@@ -41,6 +41,7 @@ function makeFractal(equations) {
   let initialPoint = [1,1];
   let points = [];
   let pointCount = 0;
+  let pointLimit = 1000;
 }
 
 function generateNextPoint(point, IFSparams){
