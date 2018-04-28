@@ -36,7 +36,7 @@ function isNumeric(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
-function makeFractal() {
+function makeFractal(equations) {
   // generate fractal from IFS equations
   let initialPoint = [1,1];
   let points = [];
