@@ -43,3 +43,7 @@ function generateNextPoint(point, IFSparams){
   	// generate next point
 	// using provided IFS equation parameters
 }
+
+function plotPoints(points){
+  // plot array of points
+}
