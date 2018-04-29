@@ -12,6 +12,7 @@ function promptForIFS(){
   rl.question(prompt, (equation) => {
     if (isValidEquation(`${equation}`)){
       // process equation params
+	  return equation.split(" ");
     }
     else {
       console.log("Invalid equation");
