@@ -7,7 +7,9 @@ const rl = readline.createInterface({
 });
 
 function promptForIFS(){
-  rl.question('Please enter an IFS equation ', (equation) => {
+  let prompt = "Please enter an IFS equation. "
+  prompt += "Leave line blank to finish input\n";
+  rl.question(prompt, (equation) => {
     if (isValidEquation(`${equation}`)){
       // process equation params
     }
