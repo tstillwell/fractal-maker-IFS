@@ -18,6 +18,9 @@ function promptForIFS(){
       // process equation params
 	  return equation.split(" ");
     }
+	else if (`${equation}` == ''){
+	  return "end";
+	}  
     else {
       console.log("Invalid equation");
 	  return false;
