@@ -16,6 +16,7 @@ function promptForIFS(){
     }
     else {
       console.log("Invalid equation");
+	  return false;
     }
     rl.close();
   });
