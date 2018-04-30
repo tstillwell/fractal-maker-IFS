@@ -18,6 +18,10 @@ function init(){
 	  if (next_equation == ""){
 	    prompt_for_more_equations = false;
 	  }
+	  else if (next_equation == false){
+	    console.log("Bad input. Aborting");
+		return;
+	  }
 	}
   }
 }
