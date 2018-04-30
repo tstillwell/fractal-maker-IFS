@@ -6,6 +6,10 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+function init(){
+  let equation = promptForIFS();
+}
+
 function promptForIFS(){
   let prompt = "Please enter an IFS equation. "
   prompt += "Leave line blank to finish input\n";
