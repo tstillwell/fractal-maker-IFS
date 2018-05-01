@@ -13,6 +13,7 @@ function init(){
   }
   else {
     let prompt_for_more_equations = true;
+	let equations = [];
 	while (prompt_for_more_equations == true){
 	  let next_equation = promptForIFS();
 	  if (next_equation == ""){
@@ -38,7 +39,7 @@ function promptForIFS(){
 	  return "end";
 	}  
     else {
-      console.log("Invalid equation");
+      console.log("Invalid equation"); 
 	  return false;
     }
     rl.close();
