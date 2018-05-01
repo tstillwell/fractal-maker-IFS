@@ -23,6 +23,9 @@ function init(){
 	    console.log("Bad input. Aborting");
 		return;
 	  }
+	  else {
+	  equations.append(next_equation);
+	  }
 	}
   }
 }
