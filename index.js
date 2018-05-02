@@ -27,7 +27,7 @@ function init(){
 	  equations.append(next_equation);
 	  }
 	}
-	return equations;
+	return makeFractal(equations);
   }
 }
 
