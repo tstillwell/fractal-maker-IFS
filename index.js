@@ -83,6 +83,9 @@ function makeFractal(equations) {
 function generateNextPoint(point, IFSparams){
   	// generate next point
 	// using provided IFS equation parameters
+	// if input point is (x,y)
+	// and IFS params are a b c d e f
+    // next point is (ax+by+e, cx+dy+f)
 }
 
 function plotPoints(points){
