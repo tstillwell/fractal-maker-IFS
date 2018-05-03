@@ -87,6 +87,7 @@ function generateNextPoint(point, IFSparams){
 	// and IFS params are a b c d e f
     // next point is (ax+by+e, cx+dy+f)
 	let next_point_x = IFSparams[0] * point[0] + IFSparams[1] * point[1] + IFSparams[4];
+	let next_point_y = IFSparams[2] * point[0] + IFSparams[3] * point[1] + IFSparams[5];
 }
 
 function plotPoints(points){
