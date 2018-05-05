@@ -70,9 +70,8 @@ function isNumeric(n) {
 
 function makeFractal(equations) {
   // generate fractal from IFS equations
-  let initialPoint = [1,1];
   let points = [];
-  points.append(initialPoint);
+  points.append([1,1]); // starting point
   let pointCount = 0;
   let pointLimit = 1000;
   while (pointCount <= pointLimit){
