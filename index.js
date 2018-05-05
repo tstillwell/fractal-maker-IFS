@@ -72,10 +72,13 @@ function makeFractal(equations) {
   // generate fractal from IFS equations
   let initialPoint = [1,1];
   let points = [];
+  points.append(initialPoint);
   let pointCount = 0;
   let pointLimit = 1000;
   while (pointCount <= pointLimit){
     pointCount += 1;
+	//let next_point = generateNextPoint();
+	points.append(next_point);
   }
   return points;
 }
