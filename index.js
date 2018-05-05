@@ -77,23 +77,23 @@ function makeFractal(equations) {
   let next_equation = [];
   while (pointCount <= pointLimit){
     pointCount += 1;
-	//next_equation = selectEquation(equations);
-	//let next_point = generateNextPoint();
-	points.append(next_point);
+    //next_equation = selectEquation(equations);
+    //let next_point = generateNextPoint();
+    points.append(next_point);
   }
   return points;
 }
 
 function generateNextPoint(point, IFSparams){
-    // generate next point
-    // using provided IFS equation parameters
-    // if input point is (x,y)
-    // and IFS params are a b c d e f
-    // next point is (ax+by+e, cx+dy+f)
-    let next_point_x = IFSparams[0] * point[0] + IFSparams[1] * point[1] + IFSparams[4];
-    let next_point_y = IFSparams[2] * point[0] + IFSparams[3] * point[1] + IFSparams[5];
-    let next_point = [next_point_x, next_point_y];
-    return next_point;
+  // generate next point
+  // using provided IFS equation parameters
+  // if input point is (x,y)
+  // and IFS params are a b c d e f
+  // next point is (ax+by+e, cx+dy+f)
+  let next_point_x = IFSparams[0] * point[0] + IFSparams[1] * point[1] + IFSparams[4];
+  let next_point_y = IFSparams[2] * point[0] + IFSparams[3] * point[1] + IFSparams[5];
+  let next_point = [next_point_x, next_point_y];
+  return next_point;
 }
 
 function plotPoints(points){
