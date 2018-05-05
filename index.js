@@ -74,8 +74,10 @@ function makeFractal(equations) {
   points.append([1,1]); // starting point
   let pointCount = 0;
   let pointLimit = 1000;
+  let next_equation = [];
   while (pointCount <= pointLimit){
     pointCount += 1;
+	//next_equation = selectEquation(equations);
 	//let next_point = generateNextPoint();
 	points.append(next_point);
   }
