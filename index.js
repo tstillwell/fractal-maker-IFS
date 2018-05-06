@@ -99,6 +99,10 @@ function generateNextPoint(point, IFSparams){
 function selectEquation(equations){
   // use probability parameter of equations to find
   // next equation chosen for IFS
+  let probabilities = [];
+  equations.forEach(function(equation){
+    probabilities.append(equation[-1]);
+  }
   let random_selection = Math.random();
 }
 
