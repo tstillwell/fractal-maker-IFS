@@ -99,6 +99,7 @@ function generateNextPoint(point, IFSparams){
 function selectEquation(equations){
   // use probability parameter of equations to find
   // next equation chosen for IFS
+  let random_selection = Math.random();
 }
 
 function plotPoints(points){
