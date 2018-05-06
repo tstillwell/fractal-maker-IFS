@@ -104,6 +104,7 @@ function selectEquation(equations){
     probabilities.append(equation[-1]);
   }
   let random_selection = Math.random();
+  // determine which interval contains selection
 }
 
 function plotPoints(points){
