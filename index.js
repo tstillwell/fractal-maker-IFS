@@ -96,6 +96,11 @@ function generateNextPoint(point, IFSparams){
   return next_point;
 }
 
+function selectEquation(equations){
+  // use probability parameter of equations to find
+  // next equation chosen for IFS
+}
+
 function plotPoints(points){
   // plot array of points
 }
