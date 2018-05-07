@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 
 function init(){
   let equation = promptForIFS();
-  if equation == (false) || ("end"){
+  if !equation || ("end"){
     return;
   }
   else {
@@ -24,7 +24,7 @@ function init(){
         return;
       }
       else {
-        equations.append(next_equation);
+        equations.push(next_equation);
       }
     }
     return makeFractal(equations);
@@ -71,7 +71,7 @@ function isNumeric(n) {
 function makeFractal(equations) {
   // generate fractal from IFS equations
   let points = [];
-  points.append([1,1]); // starting point
+  points.push([1,1]); // starting point
   let pointCount = 0;
   let pointLimit = 1000;
   let next_equation = [];
@@ -79,7 +79,7 @@ function makeFractal(equations) {
     pointCount += 1;
     //next_equation = selectEquation(equations);
     //let next_point = generateNextPoint();
-    points.append(next_point);
+    points.push(next_point);
   }
   return points;
 }
@@ -101,7 +101,7 @@ function selectEquation(equations){
   // next equation chosen for IFS
   let probabilities = [];
   equations.forEach(function(equation){
-    probabilities.append(equation[-1]);
+    probabilities.push(equation[-1]);
   }
   return getRandom(equations, probabilties);
   // determine which interval contains selection
