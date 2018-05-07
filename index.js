@@ -3,7 +3,8 @@ const readline = require('readline');
 
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
+  propmt: 'IFS equation> '
 });
 
 function init(){
@@ -34,19 +35,20 @@ function init(){
 function promptForIFS(){
   let prompt = "Please enter an IFS equation. "
   prompt += "Leave line blank to finish input\n";
-  rl.question(prompt, (equation) => {
-    if (isValidEquation(`${equation}`)){
-      // process equation params
-      return equation.split(" ");
-    }
-    else if (`${equation}` == ''){
-      return "end";
-    }
-    else {
-      console.log("Invalid equation"); 
-      return false;
-    }
-    rl.close();
+  rl.prompt();
+  rl.on('line', (line) => {
+  switch (isValidEquation(line)) {
+    case true:
+      console.log('valid input!');
+      break;
+	case false:
+      console.log('invalid input!');
+	  break;
+    default:
+      console.log(`Say what? I might have heard '${line.trim()}'`);
+      break;
+  }
+  rl.prompt();
   });
 }
 
@@ -102,7 +104,7 @@ function selectEquation(equations){
   let probabilities = [];
   equations.forEach(function(equation){
     probabilities.push(equation[-1]);
-  }
+  });
   return getRandom(equations, probabilties);
   // determine which interval contains selection
 }
@@ -110,8 +112,8 @@ function selectEquation(equations){
 function getRandom (equations, weights) {
   // https://stackoverflow.com/a/28933315
   // use weighted random selection
-  let num = Math.random(),
-  let s = 0,
+  let num = Math.random();
+  let s = 0;
   lastIndex = weights.length - 1;
   for (let i = 0; i < lastIndex; ++i) {
     s += weights[i];
@@ -125,3 +127,5 @@ function getRandom (equations, weights) {
 function plotPoints(points){
   // plot array of points
 }
+
+init();
