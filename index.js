@@ -103,9 +103,25 @@ function selectEquation(equations){
   equations.forEach(function(equation){
     probabilities.append(equation[-1]);
   }
-  let random_selection = Math.random();
+  return getRandom(equations, probabilties);
   // determine which interval contains selection
 }
+
+function getRandom (equations, weights) {
+  // https://stackoverflow.com/a/28933315
+  // use weighted random selection
+    let num = Math.random(),
+        let s = 0,
+        lastIndex = weights.length - 1;
+
+    for (let i = 0; i < lastIndex; ++i) {
+        s += weights[i];
+        if (num < s) {
+            return equations[i];
+        }
+    }
+    return equations[lastIndex];
+};
 
 function plotPoints(points){
   // plot array of points
