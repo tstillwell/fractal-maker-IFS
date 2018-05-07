@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 
 function init(){
   let equation = promptForIFS();
-  if !equation || ("end"){
+  if (equation === (false) || ("end")){
     return;
   }
   else {
