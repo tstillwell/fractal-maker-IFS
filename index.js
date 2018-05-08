@@ -42,8 +42,10 @@ function promptForIFS(){
 	  equations.push(line.split(" "));
       break;
 	case false:
-	  console.log("lineee: " + line);
-      console.log('invalid input!');
+	  if (line == ""){
+	    makeFractal(equations);
+	  }
+	  console.log('invalid input!');
 	  break;
     default:
       console.log(`Say what? I might have heard '${line.trim()}'`);
