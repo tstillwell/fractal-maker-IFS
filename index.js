@@ -82,7 +82,7 @@ function makeFractal(equations) {
   let next_equation = [];
   while (pointCount <= pointLimit){
     pointCount += 1;
-    //next_equation = selectEquation(equations);
+    next_equation = selectEquation(equations);
     //let next_point = generateNextPoint();
     points.push(next_point);
   }
@@ -108,7 +108,7 @@ function selectEquation(equations){
   equations.forEach(function(equation){
     probabilities.push(equation[-1]);
   });
-  return getRandom(equations, probabilties);
+  return getRandom(equations, probabilities);
   // determine which interval contains selection
 }
 
