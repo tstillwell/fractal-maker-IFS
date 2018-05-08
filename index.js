@@ -27,7 +27,6 @@ function promptForIFS(){
 	  console.log('invalid input!');
 	  break;
     default:
-      console.log(`Say what? I might have heard '${line.trim()}'`);
       break;
   }
   rl.prompt();
@@ -74,7 +73,6 @@ function generateNextPoint(point, IFSparams){
   // if input point is (x,y)
   // and IFS params are a b c d e f
   // next point is (ax+by+e, cx+dy+f)
-  console.log(point);
   let next_point_x = Number(IFSparams[0]) * point[0] + Number(IFSparams[1]) * point[1] + Number(IFSparams[4]);
   let next_point_y = Number(IFSparams[2]) * point[0] + Number(IFSparams[3]) * point[1] + Number(IFSparams[5]);
   let next_point = [next_point_x, next_point_y];
