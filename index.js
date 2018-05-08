@@ -8,28 +8,7 @@ const rl = readline.createInterface({
 });
 
 function init(){
-  let equation = promptForIFS();
-  if (equation === (false) || ("end")){
-    return;
-  }
-  else {
-    let prompt_for_more_equations = true;
-    let equations = [];
-    while (prompt_for_more_equations == true){
-      let next_equation = promptForIFS();
-      if (next_equation == ""){
-        prompt_for_more_equations = false;
-      }
-      else if (next_equation == false){
-        console.log("Bad input. Aborting");
-        return;
-      }
-      else {
-        equations.push(next_equation);
-      }
-    }
-    return makeFractal(equations);
-  }
+  let input = promptForIFS();
 }
 
 function promptForIFS(){
