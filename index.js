@@ -42,6 +42,7 @@ function promptForIFS(){
 	  equations.push(line.split(" "));
       break;
 	case false:
+	  console.log("lineee: " + line);
       console.log('invalid input!');
 	  break;
     default:
