@@ -62,7 +62,7 @@ function makeFractal(equations) {
   while (pointCount <= pointLimit){
     pointCount += 1;
     next_equation = selectEquation(equations);
-    let next_point = generateNextPoint(points[-1], next_equation);
+    let next_point = generateNextPoint(points[points.length - 1], next_equation);
     points.push(next_point);
   }
   return points;
@@ -74,11 +74,9 @@ function generateNextPoint(point, IFSparams){
   // if input point is (x,y)
   // and IFS params are a b c d e f
   // next point is (ax+by+e, cx+dy+f)
-  console.log("in generate func");
   console.log(point);
-  console.log(IFSparams);
-  let next_point_x = IFSparams[0] * point[0] + IFSparams[1] * point[1] + IFSparams[4];
-  let next_point_y = IFSparams[2] * point[0] + IFSparams[3] * point[1] + IFSparams[5];
+  let next_point_x = Number(IFSparams[0]) * point[0] + Number(IFSparams[1]) * point[1] + Number(IFSparams[4]);
+  let next_point_y = Number(IFSparams[2]) * point[0] + Number(IFSparams[3]) * point[1] + Number(IFSparams[5]);
   let next_point = [next_point_x, next_point_y];
   return next_point;
 }
@@ -88,7 +86,7 @@ function selectEquation(equations){
   // next equation chosen for IFS
   let probabilities = [];
   equations.forEach(function(equation){
-    probabilities.push(equation[-1]);
+    probabilities.push(equation[equation.length - 1]);
   });
   return getRandom(equations, probabilities);
   // determine which interval contains selection
