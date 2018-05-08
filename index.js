@@ -33,13 +33,13 @@ function init(){
 }
 
 function promptForIFS(){
-  let prompt = "Please enter an IFS equation. "
-  prompt += "Leave line blank to finish input\n";
+  let equations = [];
   rl.prompt();
   rl.on('line', (line) => {
   switch (isValidEquation(line)) {
     case true:
       console.log('valid input!');
+	  equations.push(line.split(" "));
       break;
 	case false:
       console.log('invalid input!');
