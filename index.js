@@ -74,6 +74,9 @@ function generateNextPoint(point, IFSparams){
   // if input point is (x,y)
   // and IFS params are a b c d e f
   // next point is (ax+by+e, cx+dy+f)
+  console.log("in generate func");
+  console.log(point);
+  console.log(IFSparams);
   let next_point_x = IFSparams[0] * point[0] + IFSparams[1] * point[1] + IFSparams[4];
   let next_point_y = IFSparams[2] * point[0] + IFSparams[3] * point[1] + IFSparams[5];
   let next_point = [next_point_x, next_point_y];
