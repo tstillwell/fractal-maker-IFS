@@ -64,7 +64,7 @@ function makeFractal(equations) {
     let next_point = generateNextPoint(points[points.length - 1], next_equation);
     points.push(next_point);
   }
-  return points;
+  return plotPoints(points);
 }
 
 function generateNextPoint(point, IFSparams){
