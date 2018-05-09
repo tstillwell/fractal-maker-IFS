@@ -87,7 +87,6 @@ function selectEquation(equations){
     probabilities.push(equation[equation.length - 1]);
   });
   return getRandom(equations, probabilities);
-  // determine which interval contains selection
 }
 
 function getRandom (equations, weights) {
