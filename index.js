@@ -18,16 +18,16 @@ function promptForIFS(){
   switch (isValidEquation(line)) {
     case true:
       console.log('valid input!');
-	  equations.push(line.split(" "));
+      equations.push(line.split(" "));
       break;
-	case false:
-	  if (line == ""){
-	    makeFractal(equations);
-	  }
-	  else {
-		console.log('invalid input!');
-	  }
-	  break;
+    case false:
+      if (line == ""){
+        makeFractal(equations);
+      }
+      else {
+        console.log('invalid input!');
+      }
+      break;
   }
   });
 }
