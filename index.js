@@ -24,12 +24,11 @@ function promptForIFS(){
 	  if (line == ""){
 	    makeFractal(equations);
 	  }
-	  console.log('invalid input!');
+	  else {
+		console.log('invalid input!');
+	  }
 	  break;
-    default:
-      break;
   }
-  rl.prompt();
   });
 }
 
@@ -106,6 +105,7 @@ function getRandom (equations, weights) {
 
 function plotPoints(points){
   // plot array of points
+  console.log(points);
 }
 
 init();
