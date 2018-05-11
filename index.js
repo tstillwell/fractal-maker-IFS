@@ -18,16 +18,16 @@ function promptForIFS(){
   switch (isValidEquation(line)) {
     case true:
       console.log('valid input!');
-	  equations.push(line.split(" "));
+      equations.push(line.split(" "));
       break;
-	case false:
-	  if (line == ""){
-	    makeFractal(equations);
-	  }
-	  else {
-		console.log('invalid input!');
-	  }
-	  break;
+    case false:
+      if (line == ""){
+        makeFractal(equations);
+      }
+      else {
+        console.log('invalid input!');
+      }
+      break;
   }
   });
 }
@@ -107,7 +107,7 @@ var Canvas = require('canvas')
   , Image = Canvas.Image
   , canvas = new Canvas(200, 200)
   , ctx = canvas.getContext('2d');
-var fs = require('fs')
+var fs = require('fs');
 
 function plotPoints(points){
   // plot array of points
@@ -116,8 +116,7 @@ function plotPoints(points){
   });
   fs.writeFile('out.jpg', canvas.toBuffer(), function(err) {
     if (err) throw err;
-  console.log(points);
-})
+  })
 }
 
 init();
