@@ -111,11 +111,13 @@ var fs = require('fs')
 
 function plotPoints(points){
   // plot array of points
-  ctx.fillRect(60, 60, 1, 1);
+  points.forEach(function(point) {
+    ctx.fillRect(point[0], point[1], 1, 1);
+  });
   fs.writeFile('out.jpg', canvas.toBuffer(), function(err) {
     if (err) throw err;
   console.log(points);
 })
 }
 
-plotPoints([1,1]);
+init();
