@@ -18,16 +18,16 @@ function promptForIFS(){
   switch (isValidEquation(line)) {
     case true:
       console.log('valid input!');
-      equations.push(line.split(" "));
+	  equations.push(line.split(" "));
       break;
-    case false:
-      if (line == ""){
-        makeFractal(equations);
-      }
-      else {
-        console.log('invalid input!');
-      }
-      break;
+	case false:
+	  if (line == ""){
+	    makeFractal(equations);
+	  }
+	  else {
+		console.log('invalid input!');
+	  }
+	  break;
   }
   });
 }
@@ -103,9 +103,19 @@ function getRandom (equations, weights) {
   return equations[lastIndex];
 };
 
+var Canvas = require('canvas')
+  , Image = Canvas.Image
+  , canvas = new Canvas(200, 200)
+  , ctx = canvas.getContext('2d');
+var fs = require('fs')
+
 function plotPoints(points){
   // plot array of points
+  ctx.fillRect(60, 60, 1, 1);
+  fs.writeFile('out.jpg', canvas.toBuffer(), function(err) {
+    if (err) throw err;
   console.log(points);
+})
 }
 
-init();
+plotPoints([1,1]);
