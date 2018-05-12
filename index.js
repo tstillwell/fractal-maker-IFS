@@ -104,12 +104,12 @@ function getRandom (equations, weights) {
 };
 
 var Canvas = require('canvas')
-  , Image = Canvas.Image
-  , canvas = new Canvas(200, 200)
-  , ctx = canvas.getContext('2d');
 var fs = require('fs');
 
 function plotPoints(points){
+  var Image = Canvas.Image;
+  var canvas = new Canvas(200, 200);
+  var ctx = canvas.getContext('2d');
   // plot array of points
   points.forEach(function(point) {
     ctx.fillRect(point[0], point[1], 1, 1);
