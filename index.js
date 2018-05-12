@@ -106,7 +106,6 @@ function getRandom (equations, weights) {
 };
 
 function plotPoints(points){
-  let Image = Canvas.Image;
   let canvas = new Canvas(200, 200);
   let ctx = canvas.getContext('2d');
   // plot array of points
