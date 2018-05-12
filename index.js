@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 const readline = require('readline');
+const Canvas = require('canvas')
+const fs = require('fs');
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -102,9 +104,6 @@ function getRandom (equations, weights) {
   }
   return equations[lastIndex];
 };
-
-var Canvas = require('canvas')
-var fs = require('fs');
 
 function plotPoints(points){
   var Image = Canvas.Image;
