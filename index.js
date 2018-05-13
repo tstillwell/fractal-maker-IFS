@@ -110,7 +110,9 @@ function plotPoints(points, height, width){
   let ctx = canvas.getContext('2d');
   // plot array of points
   points.forEach(function(point) {
-    ctx.fillRect(point[0], point[1], 1, 1);
+    let screen_x = point[0] + (width / 2);
+    let screen_y = -1 * point[1] + (height / 2);
+    ctx.fillRect(screen_x, screen_y, 1, 1);
   });
   fs.writeFile('out.jpg', canvas.toBuffer(), function(err) {
     if (err) throw err;
