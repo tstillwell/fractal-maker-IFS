@@ -113,6 +113,7 @@ function plotPoints(points, height, width){
     // convert input (cartesian) coordinates to screen coordinates
     let screen_x = point[0] + (width / 2);
     let screen_y = -1 * point[1] + (height / 2);
+    // plot translated points on canvas
     ctx.fillRect(screen_x, screen_y, 1, 1);
   });
   fs.writeFile('out.jpg', canvas.toBuffer(), function(err) {
