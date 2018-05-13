@@ -105,8 +105,8 @@ function getRandom (equations, weights) {
   return equations[lastIndex];
 };
 
-function plotPoints(points){
-  let canvas = new Canvas(200, 200);
+function plotPoints(points, height, width){
+  let canvas = new Canvas(height, width);
   let ctx = canvas.getContext('2d');
   // plot array of points
   points.forEach(function(point) {
