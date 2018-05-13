@@ -110,6 +110,7 @@ function plotPoints(points, height, width){
   let ctx = canvas.getContext('2d');
   // plot array of points
   points.forEach(function(point) {
+    // convert input (cartesian) coordinates to screen coordinates
     let screen_x = point[0] + (width / 2);
     let screen_y = -1 * point[1] + (height / 2);
     ctx.fillRect(screen_x, screen_y, 1, 1);
