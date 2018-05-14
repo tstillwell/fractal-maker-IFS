@@ -107,6 +107,10 @@ function getRandom (equations, weights) {
   return equations[lastIndex];
 };
 
+function maxPoint(points) {
+  // return largest x and y
+}
+
 function plotPoints(points, height, width){
   let canvas = new Canvas(height, width);
   let ctx = canvas.getContext('2d');
