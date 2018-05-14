@@ -108,7 +108,12 @@ function getRandom (equations, weights) {
 };
 
 function maxPoint(points) {
-  // return largest x and y
+  // return largest value from points
+  let point_values = [].concat(...points);
+  let max = points_values.reduce(function(a,b) {
+    return Math.max(a, b);
+  });
+  return max;
 }
 
 function plotPoints(points, height, width){
