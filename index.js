@@ -65,9 +65,9 @@ function makeFractal(equations) {
     let next_point = generateNextPoint(points[points.length - 1], next_equation);
     points.push(next_point);
   }
-  let x_scale = maxPoint(points);
-  let y_scale = x_scale;
-  return plotPoints(points, x_scale, y_scale);
+  let width = maxPoint(points);
+  let height = width;
+  return plotPoints(points, width, height);
 }
 
 function generateNextPoint(point, IFSparams){
