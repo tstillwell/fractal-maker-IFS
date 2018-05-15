@@ -9,6 +9,9 @@ Each equation should be in the form "a b c d e f p" to be valid.
 
 Total probability rate for all equations should not exceed one.
 
+Once all equations have been input, enter a blank line to terminate input
+and begin graphing the image.
+
 https://en.wikipedia.org/wiki/Iterated_function_system
 
 node canvas
