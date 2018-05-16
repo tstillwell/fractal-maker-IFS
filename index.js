@@ -28,6 +28,7 @@ function promptForIFS(){
       }
       else {
         console.log('invalid input!');
+        return;
       }
       break;
   }
