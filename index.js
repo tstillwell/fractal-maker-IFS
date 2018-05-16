@@ -127,6 +127,7 @@ function plotPoints(points, height, width){
     // plot translated points on canvas
     ctx.fillRect(screen_x, screen_y, 1, 1);
   });
+  // save/overwrite output file
   fs.writeFile('out.jpg', canvas.toBuffer(), function(err) {
     if (err) throw err;
   })
