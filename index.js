@@ -30,7 +30,6 @@ function promptForIFS(){
         console.log('invalid input!');
         return;
       }
-      break;
   }
   });
 }
