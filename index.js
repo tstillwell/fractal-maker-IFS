@@ -116,6 +116,20 @@ function maxPoint(points) {
   return max;
 }
 
+const flatten = function(arr, result = []) {
+  // flatten that works on large arrays without stack issues
+  // https://stackoverflow.com/a/39000004
+  for (let i = 0, length = arr.length; i < length; i++) {
+    const value = arr[i];
+    if (Array.isArray(value)) {
+      flatten(value, result);
+    } else {
+      result.push(value);
+    }
+  }
+  return result;
+};
+
 function plotPoints(points, height, width){
   let canvas = new Canvas(height, width);
   let ctx = canvas.getContext('2d');
