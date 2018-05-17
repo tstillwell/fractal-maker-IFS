@@ -105,7 +105,7 @@ function getRandom (equations, weights) {
     }
   }
   return equations[lastIndex];
-};
+}
 
 function maxPoint(points) {
   // return largest value from points
