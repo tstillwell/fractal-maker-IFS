@@ -144,7 +144,8 @@ function plotPoints(points, height, width){
   // save/overwrite output file
   fs.writeFile('out.jpg', canvas.toBuffer(), function(err) {
     if (err) throw err;
-  })
+  });
+  console.log("output file saved!");
 }
 
 init();
