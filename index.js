@@ -109,7 +109,7 @@ function getRandom (equations, weights) {
 
 function maxPoint(points) {
   // return largest value from points
-  let point_values = [].concat(...points);
+  let point_values = flatten(points);
   let max = points_values.reduce(function(a,b) {
     return Math.max(a, b);
   });
