@@ -5,8 +5,7 @@ const fs = require('fs');
 
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout,
-  propmt: 'IFS equation> '
+  output: process.stdout
 });
 
 function init(){
@@ -15,6 +14,7 @@ function init(){
 
 function promptForIFS(){
   let equations = [];
+  rl.setPrompt('IFS equation> ');
   rl.prompt();
   rl.on('line', (line) => {
   switch (isValidEquation(line)) {
