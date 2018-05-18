@@ -48,7 +48,7 @@ function isValidEquation (equation) {
 
 function isNumeric(n) {
   // https://stackoverflow.com/a/1830844
-  // return true if n is numeric
+  // true if n is a number
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
