@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const readline = require('readline');
-const Canvas = require('canvas')
+const Canvas = require('canvas');
 const fs = require('fs');
 
 const rl = readline.createInterface({
