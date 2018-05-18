@@ -24,7 +24,7 @@ function promptForIFS(){
       break;
     case false:
       if (line == ""){
-        return makeFractal(equations);
+        return makeFractal(equations, 1000000);
       }
       else {
         console.log('invalid input!');
