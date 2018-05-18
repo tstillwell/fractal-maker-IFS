@@ -16,8 +16,8 @@ Total probability rate for all equations should not exceed one.
 Once all equations have been input, enter a blank line to terminate input
 and begin graphing the image.
 
-
-
 node canvas
 
 https://github.com/Automattic/node-canvas
+
+MIT License
