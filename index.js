@@ -52,12 +52,12 @@ function isNumeric(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
-function makeFractal(equations) {
+function makeFractal(equations, points_count) {
   // generate fractal from IFS equations
   let points = [];
   points.push([1,1]); // starting point
   let pointCount = 0;
-  let pointLimit = 1000;
+  let pointLimit = points_count;
   let next_equation = [];
   while (pointCount <= pointLimit){
     pointCount += 1;
