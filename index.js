@@ -54,6 +54,7 @@ function isNumeric(n) {
 
 function makeFractal(equations, points_count) {
   // generate fractal from IFS equations
+  // points_count should be total number of points to plot
   let points = [];
   points.push([1,1]); // starting point
   let pointCount = 0;
