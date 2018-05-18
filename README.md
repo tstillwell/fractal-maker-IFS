@@ -5,7 +5,7 @@ fractals from a set of IFS equations.
 
 https://en.wikipedia.org/wiki/Iterated_function_system
 
-Input one equation per line with a probability weight as the last parameter.
+Input one equation per line.
 
 Each equation should be in the form "a b c d e f p". All equation
 parameters must be numeric. a - f are the numeric coefficients for affine
