@@ -131,7 +131,7 @@ const flatten = function(arr, result = []) {
   return result;
 };
 
-function plotPoints(points, height, width){
+function plotPoints(points, width, height){
   let canvas = new Canvas(width, height);
   let ctx = canvas.getContext('2d');
   // plot array of points
