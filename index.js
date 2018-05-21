@@ -113,6 +113,10 @@ function maxPoint(points) {
   return max;
 }
 
+function scaleFactor(points) {
+  // determine scale factor for graphing to fit image
+}
+
 const flatten = function(arr, result = []) {
   // flatten that works on large arrays without stack issues
   // https://stackoverflow.com/a/39000004
