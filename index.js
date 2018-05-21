@@ -117,6 +117,10 @@ function scaleFactor(points) {
   // determine scale factor for graphing to fit image
   let x_values = [];
   let y_values = [];
+  points.forEach(function(point) {
+    x_values.push(point[0]);
+    y_values.push(point[1]);
+  });
 }
 
 const flatten = function(arr, result = []) {
