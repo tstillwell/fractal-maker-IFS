@@ -8,10 +8,6 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-function init(){
-  let input = promptForIFS();
-}
-
 function promptForIFS(){
   let equations = [];
   rl.setPrompt('IFS equation> ');
@@ -149,4 +145,4 @@ function plotPoints(points, width, height){
   console.log("output file saved!");
 }
 
-init();
+promptForIFS();
