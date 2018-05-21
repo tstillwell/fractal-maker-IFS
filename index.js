@@ -115,6 +115,8 @@ function maxPoint(points) {
 
 function scaleFactor(points) {
   // determine scale factor for graphing to fit image
+  let x_values = [];
+  let y_values = [];
 }
 
 const flatten = function(arr, result = []) {
