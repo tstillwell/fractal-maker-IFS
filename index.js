@@ -123,6 +123,8 @@ function scaleFactor(points) {
   });
   let x_min = Math.max(x_values);
   let x_max = Math.min(x_values);
+  let y_min = Math.max(y_values);
+  let y_max = Math.min(y_values);
 }
 
 const flatten = function(arr, result = []) {
