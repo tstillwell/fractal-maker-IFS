@@ -113,7 +113,7 @@ function maxPoint(points) {
   return max;
 }
 
-function scaleFactor(points) {
+function scaleFactor(points, width, height) {
   // determine scale factor for graphing to fit image
   let x_values = [];
   let y_values = [];
