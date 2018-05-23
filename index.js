@@ -121,8 +121,6 @@ function scaleFactor(points, width, height) {
     x_values.push(point[0]);
     y_values.push(point[1]);
   });
-  let x_range = [Math.max(x_values), Math.min(x_values)];
-  let y_range = [Math.max(y_values), Math.min(y_values)];
   let x_scale = width / Math.max(x_values);
   let y_scale = height / Math.max(y_values);
 }
