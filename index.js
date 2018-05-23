@@ -123,6 +123,7 @@ function scaleFactor(points, width, height) {
   });
   let x_scale = width / Math.max(x_values);
   let y_scale = height / Math.max(y_values);
+  return [x_scale, y_scale];
 }
 
 const flatten = function(arr, result = []) {
