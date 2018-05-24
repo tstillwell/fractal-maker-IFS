@@ -144,6 +144,7 @@ function plotPoints(points, width, height){
   let canvas = new Canvas(width, height);
   let ctx = canvas.getContext('2d');
   let scales = scaleFactor(points, width, height);
+  let x_scale = scales[0];
   // plot array of points
   points.forEach(function(point) {
     // convert input (cartesian) coordinates to screen coordinates
