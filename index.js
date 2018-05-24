@@ -143,6 +143,7 @@ const flatten = function(arr, result = []) {
 function plotPoints(points, width, height){
   let canvas = new Canvas(width, height);
   let ctx = canvas.getContext('2d');
+  let scales = scaleFactor(points, width, height);
   // plot array of points
   points.forEach(function(point) {
     // convert input (cartesian) coordinates to screen coordinates
