@@ -16,8 +16,12 @@ function promptForIFS(){
   switch (isValidEquation(line)) {
     case true:
       console.log('valid input!');
-      equations.push(Number(line.split(" ")));
-      break;
+      let equation = []
+      let equation_strings = line.split(" ");
+      equation_strings.forEach(function(element){
+        equation.push(Number(element));
+      });
+      equations.push(equation);
     case false:
       if (line == ""){
         return makeFractal(equations, 1000000);
