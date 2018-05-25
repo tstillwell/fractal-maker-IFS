@@ -106,11 +106,20 @@ function getRandom (equations, weights) {
 
 function maxPoint(points) {
   // return largest value from points
-  let point_values = flatten(points);
-  let max = point_values.reduce(function(a,b) {
-    return Math.max(a, b);
+  let x_values = [];
+  let y_values = [];
+  points.forEach(function(point) {
+    x_values.push(point[0]);
+    y_values.push(point[1]);
   });
-  return max;
+  let x_max = Math.abs(Math.max(x_values));
+  let y_max = Math.abs(Math.max(y_values));
+  if (x_max > y_max){
+    return x_max;
+  }
+  else {
+    return y_max;
+  }	
 }
 
 function scaleFactor(points, width, height) {
