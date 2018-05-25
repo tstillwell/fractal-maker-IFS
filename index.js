@@ -105,7 +105,7 @@ function getRandom (equations, weights) {
 }
 
 function maxPoint(points) {
-  // return largest value from points
+  // return largest absolute value from points
   let x_values = [];
   let y_values = [];
   points.forEach(function(point) {
