@@ -126,20 +126,6 @@ function scaleFactor(points, width, height) {
   return [x_scale, y_scale];
 }
 
-const flatten = function(arr, result = []) {
-  // flatten that works on large arrays without stack issues
-  // https://stackoverflow.com/a/39000004
-  for (let i = 0, length = arr.length; i < length; i++) {
-    const value = arr[i];
-    if (Array.isArray(value)) {
-      flatten(value, result);
-    } else {
-      result.push(value);
-    }
-  }
-  return result;
-};
-
 function plotPoints(points, width, height){
   let canvas = new Canvas(width, height);
   let ctx = canvas.getContext('2d');
