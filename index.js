@@ -108,6 +108,10 @@ function getRandom (equations, weights) {
   return equations[lastIndex];
 }
 
+function arrayMax(array) {
+  return array.reduce((a, b) => Math.max(a, b));
+}
+
 function maxPoint(points) {
   // return largest absolute value from points
   let x_values = [];
@@ -116,8 +120,8 @@ function maxPoint(points) {
     x_values.push(point[0]);
     y_values.push(point[1]);
   });
-  let x_max = Math.abs(Math.max(x_values));
-  let y_max = Math.abs(Math.max(y_values));
+  let x_max = Math.abs(arrayMax(x_values));
+  let y_max = Math.abs(arrayMax(y_values));
   if (x_max > y_max){
     return x_max;
   }
@@ -134,8 +138,8 @@ function scaleFactor(points, width, height) {
     x_values.push(point[0]);
     y_values.push(point[1]);
   });
-  let x_scale = width / Math.max(x_values);
-  let y_scale = height / Math.max(y_values);
+  let x_scale = width / arrayMax(x_values);
+  let y_scale = height / arrayMax(y_values);
   return [x_scale, y_scale];
 }
 
