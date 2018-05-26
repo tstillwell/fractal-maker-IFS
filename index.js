@@ -109,6 +109,7 @@ function getRandom (equations, weights) {
 }
 
 function arrayMax(array) {
+  // https://stackoverflow.com/a/31643591
   return array.reduce((a, b) => Math.max(a, b));
 }
 
