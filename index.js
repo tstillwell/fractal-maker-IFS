@@ -22,6 +22,7 @@ function promptForIFS(){
         equation.push(Number(element));
       });
       equations.push(equation);
+      break;
     case false:
       if (line == ""){
         return makeFractal(equations, 1000000);
