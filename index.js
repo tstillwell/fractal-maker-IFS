@@ -59,9 +59,8 @@ function makeFractal(equations, points_count) {
   let points = [];
   points.push([1,1]); // starting point
   let index = 0;
-  let pointLimit = points_count;
   let next_equation = [];
-  while (index <= pointLimit){
+  while (index <= points_count){
     index += 1;
     next_equation = selectEquation(equations);
     let next_point = generateNextPoint(points[points.length - 1], next_equation);
