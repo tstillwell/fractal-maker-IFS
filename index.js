@@ -67,8 +67,8 @@ function makeFractal(equations, points_count) {
     let next_point = generateNextPoint(points[points.length - 1], next_equation);
     points.push(next_point);
   }
-  let width = maxPoint(points);
-  let height = width;
+  let width = 1000;
+  let height = 1000;
   return plotPoints(points, width, height);
 }
 
