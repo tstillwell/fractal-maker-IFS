@@ -16,7 +16,7 @@ function promptForIFS(){
   switch (isValidEquation(line)) {
     case true:
       console.log('valid input!');
-      let equation = []
+      let equation = [];
       let equation_strings = line.split(" ");
       equation_strings.forEach(function(element){
         equation.push(Number(element));
