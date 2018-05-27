@@ -115,24 +115,6 @@ function arrayMax(array) {
   return array.reduce((a, b) => Math.max(a, b));
 }
 
-function maxPoint(points) {
-  // return largest absolute value from points
-  let x_values = [];
-  let y_values = [];
-  points.forEach(function(point) {
-    x_values.push(point[0]);
-    y_values.push(point[1]);
-  });
-  let x_max = Math.abs(arrayMax(x_values));
-  let y_max = Math.abs(arrayMax(y_values));
-  if (x_max > y_max){
-    return x_max;
-  }
-  else {
-    return y_max;
-  }	
-}
-
 function scaleFactor(points, width, height) {
   // determine scale factor for graphing to fit image
   let x_values = [];
