@@ -10,7 +10,7 @@ const rl = readline.createInterface({
 
 function promptForIFS(){
   let equations = [];
-  rl.setPrompt('IFS equation> ');
+  rl.setPrompt('IFS > ');
   rl.prompt();
   rl.on('line', (line) => {
   switch (isValidEquation(line)) {
