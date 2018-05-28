@@ -16,6 +16,8 @@ Total probability weights for all equations should not exceed one.
 Once all equations have been input, enter a blank line to terminate input
 and begin graphing the image.
 
+Image is output as 'out.jpg' in the current directory.
+
 node canvas
 
 https://github.com/Automattic/node-canvas
