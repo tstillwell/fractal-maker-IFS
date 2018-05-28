@@ -22,6 +22,7 @@ function promptForIFS(){
         equation.push(Number(element));
       });
       equations.push(equation);
+      rl.prompt();
       break;
     case false:
       if (line == ""){
