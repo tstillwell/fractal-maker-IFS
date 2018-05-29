@@ -1,0 +1,23 @@
+{
+  "name": "fractal-maker-ifs",
+  "version": "1.0.0",
+  "description": "CLI iterated function system",
+  "main": "index.js",
+  "dependencies": {
+    "canvas": "^1.6.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tstillwell/fractal-maker-IFS.git"
+  },
+  "author": "Tristan Stillwell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tstillwell/fractal-maker-IFS/issues"
+  },
+  "homepage": "https://github.com/tstillwell/fractal-maker-IFS#readme"
+}
