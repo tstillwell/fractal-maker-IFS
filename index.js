@@ -25,7 +25,7 @@ function promptForIFS(){
       rl.prompt();
       break;
     case false:
-      if (line == ""){
+      if (line == ""){ // empty line signals input end
         return makeFractal(equations, 1000000);
       }
       else {
