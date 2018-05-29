@@ -1,6 +1,6 @@
 # fractal-maker-IFS
 
-An iterated function system (IFS) to create
+An iterated function system (IFS) node CLI app to create
 fractals from a set of IFS equations.
 
 https://en.wikipedia.org/wiki/Iterated_function_system
