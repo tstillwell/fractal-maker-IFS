@@ -30,6 +30,7 @@ function promptForIFS(){ // prompt control flow
       }
       else {
         console.log('invalid input!');
+        rl.prompt();
         return;
       }
   }
