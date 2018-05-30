@@ -8,7 +8,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-function promptForIFS(){
+function promptForIFS(){ // prompt control flow
   let equations = [];
   rl.setPrompt('IFS > ');
   rl.prompt();
