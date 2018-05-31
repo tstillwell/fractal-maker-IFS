@@ -14,7 +14,7 @@ transformation, and p is the probability weight for the equation.
 Total probability weights for all equations should not exceed one.
 
 Once all equations have been input, enter a blank line to terminate input
-and begin graphing the image.
+and graph the image.
 
 Image is output as 'out.jpg' in the current directory.
 
