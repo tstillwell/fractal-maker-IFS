@@ -116,7 +116,7 @@ function arrayMax(array) {
 }
 
 function scaleFactor(points, width, height) {
-  // determine scale factor for graphing to fit image
+  // determine zoom level for graphing to fit image
   let x_values = [];
   let y_values = [];
   points.forEach(function(point) { 
