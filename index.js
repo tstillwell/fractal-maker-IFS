@@ -100,8 +100,7 @@ function getRandom (equations, weights) {
   // use weighted random selection
   let num = Math.random();
   let s = 0;
-  lastIndex = weights.length - 1;
-  for (let i = 0; i < lastIndex; ++i) {
+  for (let i = 0; i < weights.length - 1; ++i) {
     s += weights[i];
     if (num < s) {
       return equations[i];
