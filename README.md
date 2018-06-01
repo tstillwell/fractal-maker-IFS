@@ -22,4 +22,5 @@ Uses node-canvas
 
 https://github.com/Automattic/node-canvas
 
+### License ###
 MIT License
