@@ -103,7 +103,7 @@ function getRandom (equations, weights){
   let s = 0;
   for (let i = 0; i < weights.length - 1; ++i){
     s += weights[i];
-    if (num < s) {
+    if (num < s){
       return equations[i];
     }
   }
