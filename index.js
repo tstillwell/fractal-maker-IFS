@@ -14,7 +14,7 @@ function promptForIFS(){ // prompt control flow
   rl.setPrompt('IFS > ');
   rl.prompt();
   rl.on('line', (line) => {
-  switch (isValidEquation(line)) {
+  switch (isValidEquation(line)){
     case true:
       console.log('valid input!');
       let equation = [];
