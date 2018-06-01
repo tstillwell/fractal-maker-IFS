@@ -120,7 +120,7 @@ function scaleFactor(points, width, height) {
   // determine zoom level for graphing to fit image
   let x_values = [];
   let y_values = [];
-  points.forEach(function(point) { 
+  points.forEach(function(point) {
     // split points array into x and y values
     x_values.push(point[0]);
     y_values.push(point[1]);
