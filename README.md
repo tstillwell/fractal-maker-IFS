@@ -18,7 +18,7 @@ and graph the image.
 
 Image is output as 'out.jpg' in the running directory.
 
-node canvas
+Uses node-canvas
 
 https://github.com/Automattic/node-canvas
 
