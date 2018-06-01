@@ -38,7 +38,7 @@ function promptForIFS(){ // prompt control flow
   });
 }
 
-function isValidEquation (equation) {
+function isValidEquation (equation){
   // confirm equation is in expected format
   // IFS parameters should be 7 decimal coefficients
   let coefficients = equation.split(" ");
@@ -50,13 +50,13 @@ function isValidEquation (equation) {
   }
 }
 
-function isNumeric(n) {
+function isNumeric(n){
   // https://stackoverflow.com/a/1830844
   // true if n is a number
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
-function makeFractal(equations, points_count) {
+function makeFractal(equations, points_count){
   // generate fractal from IFS equations
   // points_count should be total number of points to plot
   let points = [];
@@ -96,12 +96,12 @@ function selectEquation(equations){
   return getRandom(equations, probabilities);
 }
 
-function getRandom (equations, weights) {
+function getRandom (equations, weights){
   // https://stackoverflow.com/a/28933315
   // use weighted random selection
   let num = Math.random();
   let s = 0;
-  for (let i = 0; i < weights.length - 1; ++i) {
+  for (let i = 0; i < weights.length - 1; ++i){
     s += weights[i];
     if (num < s) {
       return equations[i];
@@ -110,17 +110,17 @@ function getRandom (equations, weights) {
   return equations[-1];
 }
 
-function arrayMax(array) {
+function arrayMax(array){
   // max element in array without errors for large arrays
   // https://stackoverflow.com/a/31643591
   return array.reduce((a, b) => Math.max(a, b));
 }
 
-function scaleFactor(points, width, height) {
+function scaleFactor(points, width, height){
   // determine zoom level for graphing to fit image
   let x_values = [];
   let y_values = [];
-  points.forEach(function(point) {
+  points.forEach(function(point){
     // split points array into x and y values
     x_values.push(point[0]);
     y_values.push(point[1]);
@@ -137,7 +137,7 @@ function plotPoints(points, width, height){
   let x_scale = Math.abs(scales[0]);
   let y_scale = Math.abs(scales[1]);
   // plot array of points
-  points.forEach(function(point) {
+  points.forEach(function(point){
     // translate input (cartesian) coordinates to screen coordinates
     let screen_x = x_scale * point[0] + (width / 2);
     let screen_y = -1 * y_scale * point[1] + (height / 2);
@@ -145,7 +145,7 @@ function plotPoints(points, width, height){
     ctx.fillRect(screen_x, screen_y, 1, 1);
   });
   // save/overwrite output file
-  fs.writeFile('out.jpg', canvas.toBuffer(), function(err) {
+  fs.writeFile('out.jpg', canvas.toBuffer(), function(err){
     if (err) throw err;
   });
   console.log("output file saved!");
