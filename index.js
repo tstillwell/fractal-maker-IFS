@@ -9,6 +9,7 @@ const rl = readline.createInterface({
 });
 
 function promptForIFS(){ // prompt control flow
+  // process input until blank line is entered
   let equations = [];
   rl.setPrompt('IFS > ');
   rl.prompt();
