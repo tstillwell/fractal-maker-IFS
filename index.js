@@ -125,8 +125,8 @@ function scaleFactor(points, width, height){
     x_values.push(point[0]);
     y_values.push(point[1]);
   });
-  let x_scale = width / arrayMax(x_values);
-  let y_scale = height / arrayMax(y_values);
+  let x_scale = Math.abs(width / arrayMax(x_values));
+  let y_scale = Math.abs(height / arrayMax(y_values));
   return [x_scale, y_scale];
 }
 
@@ -134,8 +134,8 @@ function plotPoints(points, width, height){
   let canvas = new Canvas(width, height);
   let ctx = canvas.getContext('2d');
   let scales = scaleFactor(points, width, height);
-  let x_scale = Math.abs(scales[0]);
-  let y_scale = Math.abs(scales[1]);
+  let x_scale = scales[0];
+  let y_scale = scales[1];
   // plot array of points
   points.forEach(function(point){
     // translate input (cartesian) coordinates to screen coordinates
