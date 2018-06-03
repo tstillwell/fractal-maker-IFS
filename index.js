@@ -16,7 +16,7 @@ function promptForIFS(){ // prompt control flow
   rl.on('line', (line) => {
   switch (isValidEquation(line)){
     case true:
-      console.log('valid input!');
+      console.log('saving equation...');
       let equation = [];
       let equation_strings = line.split(" ");
       equation_strings.forEach(function(element){
