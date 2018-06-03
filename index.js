@@ -30,7 +30,7 @@ function promptForIFS(){ // prompt control flow
         return makeFractal(equations, 1000000);
       }
       else {
-        console.log('invalid input!');
+        console.log('invalid input, ignoring...');
         rl.prompt();
         return;
       }
