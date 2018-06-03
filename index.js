@@ -121,7 +121,7 @@ function scaleFactor(points, width, height){
   let x_values = [];
   let y_values = [];
   points.forEach(function(point){
-    // split points array into x and y values
+    // get x and y values for each point
     x_values.push(point[0]);
     y_values.push(point[1]);
   });
