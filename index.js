@@ -12,6 +12,7 @@ function promptForIFS(){ // prompt control flow
   // process input until blank line is entered
   console.log("IFS plotter. Input IFS equations.");
   console.log("Terminate input with blank input.");
+  console.log("See README for more info");
   let equations = [];
   rl.setPrompt('IFS > ');
   rl.prompt();
