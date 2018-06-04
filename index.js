@@ -10,6 +10,7 @@ const rl = readline.createInterface({
 
 function promptForIFS(){ // prompt control flow
   // process input until blank line is entered
+  console.log("IFS plotter. Input IFS equations. Terminate input with blank input.");
   let equations = [];
   rl.setPrompt('IFS > ');
   rl.prompt();
