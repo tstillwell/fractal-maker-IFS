@@ -107,7 +107,7 @@ function getRandom (equations, weights){
       return equations[i];
     }
   }
-  return equations[-1];
+  return equations[weights.length - 1];
 }
 
 function arrayMax(array){
