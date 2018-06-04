@@ -148,6 +148,7 @@ function plotPoints(points, width, height){
     if (err) throw err;
   });
   console.log("output file saved!");
+  process.exit();
 }
 
 promptForIFS();
