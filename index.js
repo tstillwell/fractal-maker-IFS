@@ -129,6 +129,7 @@ function scaleFactor(points, width, height){
     x_values.push(point[0]);
     y_values.push(point[1]);
   });
+  // determine scale multiplier for x and y
   let x_scale = Math.abs(width / arrayMax(x_values));
   let y_scale = Math.abs(height / arrayMax(y_values));
   return [x_scale, y_scale];
