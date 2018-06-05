@@ -23,6 +23,7 @@ function promptForIFS(){ // prompt control flow
       let equation = [];
       let equation_strings = line.split(" ");
       equation_strings.forEach(function(element){
+	    // convert input equation to array
         equation.push(Number(element));
       });
       equations.push(equation);
