@@ -106,6 +106,7 @@ function getRandom (equations, weights){
   let num = Math.random();
   let s = 0;
   for (let i = 0; i < weights.length - 1; ++i){
+    // partition selection range
     s += weights[i];
     if (num < s){
       return equations[i];
