@@ -154,6 +154,7 @@ function plotPoints(points, width, height){
   fs.writeFile('out.jpg', canvas.toBuffer(), function(err){
     if (err) throw err;
   });
+  // notify user image is saved and exit
   console.log("output file saved!");
   process.exit();
 }
