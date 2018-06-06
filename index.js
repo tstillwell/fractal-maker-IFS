@@ -144,7 +144,7 @@ function plotPoints(points, width, height){
   let x_scale = scales[0];
   let y_scale = scales[1];
   points.forEach(function(point){
-    // translate input (cartesian) coordinates to screen coordinates
+    // translate input (cartesian) coordinates to valid canvas coordinates
     let screen_x = x_scale * point[0] + (width / 2);
     let screen_y = -1 * y_scale * point[1] + (height / 2);
     // plot translated points on canvas
