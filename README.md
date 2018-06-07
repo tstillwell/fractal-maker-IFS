@@ -28,6 +28,10 @@ If a point is (x,y) and equations are in the form a b c d e f
 the next point generated is
 (ax+by+e, cx+dy+f)
 
+Another equation is selected and the previously generated point
+is used as the input until the specified number of points
+have been generated.
+
 ______________________________________________________
 
 Uses node-canvas
