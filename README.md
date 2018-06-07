@@ -16,6 +16,8 @@ Total probability weights for all equations should not exceed one.
 Once all equations have been input, enter a blank line to terminate input
 and graph the image.
 
+Image is output as 'out.jpg' in the running directory.
+
 The app takes an initial point (1,1)
 and selects an equation entered using the weights provided.
 
@@ -23,8 +25,6 @@ If a point is (x,y) and equations are in the form a b c d e f
 
 the next point generated is
 (ax+by+e, cx+dy+f)
-
-Image is output as 'out.jpg' in the running directory.
 
 Uses node-canvas
 
