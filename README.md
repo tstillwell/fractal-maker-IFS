@@ -14,9 +14,10 @@ transformation, and p is the probability weight for the equation.
 Total probability weights for all equations should not exceed one.
 
 Once all equations have been input, enter a blank line to terminate input
-and graph the image.
+and begin the iteration process.
 
-Image is output as 'out.jpg' in the running directory.
+Once the itration process finishes,
+image is output as 'out.jpg' in the running directory.
 
 ## Iteration Process ##
 
