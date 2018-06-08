@@ -46,12 +46,7 @@ function isValidEquation (equation){
   // confirm equation is in expected format
   // IFS parameters should be 7 decimal coefficients
   let coefficients = equation.split(" ");
-  if (coefficients.length == (7) && (coefficients.every(isNumeric))){
-    return true;
-  }
-  else {
-    return false;
-  }
+  return (coefficients.length == (7) && (coefficients.every(isNumeric)))
 }
 
 function isNumeric(n){
