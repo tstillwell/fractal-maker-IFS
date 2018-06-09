@@ -8,6 +8,7 @@ https://en.wikipedia.org/wiki/Iterated_function_system
 Input one equation per line.
 
 Each equation should be in the form 
+
 `a b c d e f p`
  
 All equation parameters must be numeric.
