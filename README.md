@@ -7,6 +7,10 @@ https://en.wikipedia.org/wiki/Iterated_function_system
 
 Input one equation per line.
 
+Here is an example equation
+
+`0.76 -0.4 0.4 0.76 0.0 0.0 0.5`
+
 Each equation should be in the form 
 
 `a b c d e f p`
