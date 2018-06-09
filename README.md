@@ -7,8 +7,11 @@ https://en.wikipedia.org/wiki/Iterated_function_system
 
 Input one equation per line.
 
-Each equation should be in the form "a b c d e f p". All equation
-parameters must be numeric. a - f are the numeric coefficients for affine
+Each equation should be in the form 
+`a b c d e f p`
+ 
+All equation parameters must be numeric.
+a - f are the numeric coefficients for affine
 transformation, and p is the probability weight for the equation.
 
 Total probability weights for all equations should not exceed one.
