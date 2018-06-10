@@ -32,9 +32,13 @@ and the resulting image is output as 'out.jpg' in the running directory.
 The app takes an initial point (1,1)
 and selects an equation from those entered using the weights provided.
 
-If the input point is `(x,y)`
+If the input point is 
 
-and equations are in the form `a b c d e f p`
+`(x,y)`
+
+and equations are in the form 
+
+`a b c d e f p`
 
 the next point generated is
 
