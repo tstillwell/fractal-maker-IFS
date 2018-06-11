@@ -30,7 +30,7 @@ function promptForIFS(){ // prompt control flow
       rl.prompt();
       break;
     case false:
-      if (line == ""){ // empty line signals input end
+      if (line == ""){ // empty line signals equation input end
         return makeFractal(equations, 1000000);
       }
       else {
