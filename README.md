@@ -23,7 +23,7 @@ A probability weight of `0.5` for example,
 gives the specified equation a 50% chance of being chosen
 per iteration.
 
-Total probability weights for all equations should not exceed one.
+Total probability weights for all equations should not exceed 1.0
 
 Once all equations have been input, enter a blank line to terminate input
 and begin the iteration process.
