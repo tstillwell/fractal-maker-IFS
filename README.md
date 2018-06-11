@@ -19,6 +19,9 @@ All equation parameters must be numeric.
 a - f are the numeric coefficients for affine
 transformation, and p is the probability weight for the equation.
 
+A probability weight of 0.5 gives the specified equation a 50%
+chance of being chosen.
+
 Total probability weights for all equations should not exceed one.
 
 Once all equations have been input, enter a blank line to terminate input
