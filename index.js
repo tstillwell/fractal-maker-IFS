@@ -18,7 +18,7 @@ function promptForIFS(){ // prompt control flow
   rl.prompt();
   rl.on('line', (line) => {
   switch (isValidEquation(line)){
-    case true:
+    case true: // add this input to equaitons array
       console.log('saving equation...');
       let equation = [];
       let equation_strings = line.split(" ");
