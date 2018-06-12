@@ -151,7 +151,6 @@ function plotPoints(points, width, height){
   });
   // notify user image is saved and exit
   console.log("output file saved!");
-  process.exit();
 }
 
 promptForIFS();
