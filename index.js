@@ -21,7 +21,7 @@ function promptForIFS(){ // prompt control flow
     case true: // add this input to equaitons array
       console.log('saving equation...');
       let equation = [];
-      let equation_strings = line.split(" ");
+      const equation_strings = line.split(" ");
       equation_strings.forEach(function(element){
         // convert input equation to array
         equation.push(Number(element));
