@@ -45,7 +45,7 @@ function promptForIFS(){ // prompt control flow
 function isValidEquation (equation){
   // confirm equation is in expected format
   // IFS equations should be 7 numeric coefficients
-  let coefficients = equation.split(" ");
+  const coefficients = equation.split(" ");
   return (coefficients.length == (7) && (coefficients.every(isNumeric)));
 }
 
