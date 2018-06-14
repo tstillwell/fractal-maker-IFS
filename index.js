@@ -98,7 +98,7 @@ function selectEquation(equations){
 function getRandom (equations, weights){
   // https://stackoverflow.com/a/28933315
   // use weighted random selection
-  let num = Math.random();
+  const num = Math.random();
   let s = 0;
   for (let i = 0; i < weights.length - 1; ++i){
     // partition selection range
