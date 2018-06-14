@@ -133,8 +133,8 @@ function scaleFactor(points, width, height){
 
 function plotPoints(points, width, height){
   // create canvas and plot points to it
-  let canvas = new Canvas(width, height);
-  let ctx = canvas.getContext('2d');
+  const canvas = new Canvas(width, height);
+  const ctx = canvas.getContext('2d');
   let scales = scaleFactor(points, width, height);
   let x_scale = scales[0];
   let y_scale = scales[1];
