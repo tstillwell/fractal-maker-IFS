@@ -136,8 +136,8 @@ function plotPoints(points, width, height){
   const canvas = new Canvas(width, height);
   const ctx = canvas.getContext('2d');
   const scales = scaleFactor(points, width, height);
-  let x_scale = scales[0];
-  let y_scale = scales[1];
+  const x_scale = scales[0];
+  const y_scale = scales[1];
   points.forEach(function(point){
     // translate input (cartesian) coordinates to valid canvas coordinates
     let screen_x = x_scale * point[0] + (width / 2);
