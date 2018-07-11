@@ -131,6 +131,13 @@ function scaleFactor(points, width, height){
   return [x_scale, y_scale];
 }
 
+function makeCanvas(width, height){
+  // return 2d canvas with specified width and height
+  const canvas = new Canvas(width, height);
+  const ctx = canvas.getContext('2d');
+  return ctx;
+}
+
 function plotPoints(points, width, height){
   // create canvas and plot points to it
   const canvas = new Canvas(width, height);
