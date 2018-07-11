@@ -140,8 +140,7 @@ function makeCanvas(width, height){
 
 function plotPoints(points, width, height){
   // create canvas and plot points to it
-  const canvas = new Canvas(width, height);
-  const ctx = canvas.getContext('2d');
+  const ctx = makeCanvas(width,height);
   const scales = scaleFactor(points, width, height);
   const x_scale = scales[0];
   const y_scale = scales[1];
