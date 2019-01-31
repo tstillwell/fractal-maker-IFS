@@ -8,7 +8,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-function promptForIFS(){ // prompt control flow
+function promptForIFS() { // prompt control flow
   // process input until blank line is entered
   console.log("IFS plotter. Input IFS equations.");
   console.log("Terminate input with blank line.");
@@ -42,20 +42,20 @@ function promptForIFS(){ // prompt control flow
   });
 }
 
-function isValidEquation (equation){
+function isValidEquation (equation) {
   // confirm equation is in expected format
   // IFS equations should be 7 numeric coefficients
   const coefficients = equation.split(" ");
   return (coefficients.length == (7) && (coefficients.every(isNumeric)));
 }
 
-function isNumeric(n){
+function isNumeric(n) {
   // https://stackoverflow.com/a/1830844
   // true if n is a number
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
-function makeFractal(equations, points_count){
+function makeFractal(equations, points_count) {
   // generate fractal from IFS equations
   // points_count should be total number of points to plot
   let points = [];
@@ -73,7 +73,7 @@ function makeFractal(equations, points_count){
   return plotPoints(points, width, height);
 }
 
-function generateNextPoint(point, IFSparams){
+function generateNextPoint(point, IFSparams) {
   // determine coordinates for next point
   // using provided IFS equation parameters
   // if input point is (x,y)
@@ -85,7 +85,7 @@ function generateNextPoint(point, IFSparams){
   return next_point;
 }
 
-function selectEquation(equations){
+function selectEquation(equations) {
   // use probability parameter of equations to find
   // next equation chosen for IFS
   let probabilities = [];
@@ -95,7 +95,7 @@ function selectEquation(equations){
   return getRandom(equations, probabilities);
 }
 
-function getRandom (equations, weights){
+function getRandom (equations, weights) {
   // https://stackoverflow.com/a/28933315
   // use weighted random selection
   const num = Math.random();
@@ -116,7 +116,7 @@ function arrayMax(array){
   return array.reduce((a, b) => Math.max(a, b));
 }
 
-function scaleFactor(points, width, height){
+function scaleFactor(points, width, height) {
   // determine zoom level for graphing to fit image
   let x_values = [];
   let y_values = [];
@@ -131,14 +131,14 @@ function scaleFactor(points, width, height){
   return [x_scale, y_scale];
 }
 
-function makeCanvas(width, height){
+function makeCanvas(width, height) {
   // return 2d canvas with specified width and height
   const canvas = new Canvas(width, height);
   const ctx = canvas.getContext('2d');
   return ctx;
 }
 
-function plotPoints(points, width, height){
+function plotPoints(points, width, height) {
   // plot points to a new canvas
   const ctx = makeCanvas(width,height);
   const scales = scaleFactor(points, width, height);
